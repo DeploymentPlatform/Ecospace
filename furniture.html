@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collaborative Furniture Solutions | Eco Space Products</title>
+  <meta name="description" content="Explore Eco Space Products' modern corporate office furniture, lounges, huddles, focus pods, and café tables designed for active workspace collaboration.">
+  
+  <!-- Google Fonts: Poppins (Headings) & Outfit (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- SHARED HEADER NAVIGATION -->
+  <header class="main-header" id="main-header">
+    <div class="header-container">
+      <a href="index.html" class="logo-container" aria-label="Eco Space Products Home">
+        <img src="assets/logo.png" alt="Eco Space Products Logo" class="brand-logo-img">
+      </a>
+
+      <!-- Desktop Links -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links-list">
+          <li><a href="index.html" class="nav-item-link">Home</a></li>
+          <li class="dropdown-container">
+            <a href="alloy.html" class="nav-item-link dropdown-trigger">Products <span class="arrow-icon">▼</span></a>
+            <ul class="dropdown-menu">
+              <li><a href="alloy.html" class="dropdown-link">Partitions</a></li>
+              <li><a href="furniture.html" class="dropdown-link">Furniture</a></li>
+            </ul>
+          </li>
+          <li><a href="projects.html" class="nav-item-link">Projects</a></li>
+          <li><a href="about.html" class="nav-item-link">About Us</a></li>
+          <li><a href="contact.html" class="nav-item-link contact-button">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile hamburger -->
+      <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Overlay Menu -->
+    <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+        <li class="mobile-dropdown-container">
+          <button class="mobile-dropdown-trigger" id="mobile-dropdown-trigger">
+            Products <span class="mobile-arrow-icon">▼</span>
+          </button>
+          <ul class="mobile-dropdown-menu" id="mobile-dropdown-menu">
+            <li><a href="alloy.html" class="mobile-nav-link sub-link">Partitions</a></li>
+            <li><a href="furniture.html" class="mobile-nav-link sub-link">Furniture</a></li>
+          </ul>
+        </li>
+        <li><a href="projects.html" class="mobile-nav-link">Projects</a></li>
+        <li><a href="about.html" class="mobile-nav-link">About Us</a></li>
+        <li><a href="contact.html" class="mobile-nav-link mobile-contact-btn">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SPACER BANNER -->
+    <section class="furniture-hero-banner" style="background-image: url('assets/hero-furniture.jpg');">
+      <div class="dark-overlay"></div>
+      <div class="furniture-banner-content">
+        <h1>Collaborative Furniture</h1>
+        <p>Dynamic furniture layouts engineered to foster natural workspace alignment and ergonomic team comfort.</p>
+      </div>
+    </section>
+
+    <!-- FIVE CATEGORY CARDS GRID -->
+    <section class="furniture-section">
+      <div class="section-container" style="padding-top: 80px;">
+        
+        <div class="section-header-wrapper">
+          <span class="section-badge">Comfort & Flex</span>
+          <h2 class="section-title">Workspace Categories</h2>
+          <div class="accent-line"></div>
+          <p class="section-subtitle">Furniture solutions for lounges, cafés, receptions, collaboration zones, huddle spaces, and flexible work environments.</p>
+        </div>
+
+        <div class="furniture-cats-grid">
+          
+          <!-- Category 1 -->
+          <div class="f-cat-card">
+            <div class="f-cat-img-wrapper">
+              <img src="assets/furniture-1.jpg" alt="Sleek Modern Lounge Seating Setup" class="f-cat-img" loading="lazy">
+            </div>
+            <div class="f-cat-info">
+              <h3 class="f-cat-title">Lounge Furniture</h3>
+              <p class="f-cat-desc">Deep plush armchairs, flexible soft-seating configurations, and minimalist tables creating a highly welcoming area.</p>
+            </div>
+          </div>
+
+          <!-- Category 2 -->
+          <div class="f-cat-card">
+            <div class="f-cat-img-wrapper">
+              <img src="assets/furniture-2.jpg" alt="Sturdy Cafe Bar Stools and Bistro Tables" class="f-cat-img" loading="lazy">
+            </div>
+            <div class="f-cat-info">
+              <h3 class="f-cat-title">Café Furniture</h3>
+              <p class="f-cat-desc">Sturdy bar stools, high-pressure laminate bistro tables, and sleek stackable lightweight polypropylene chairs.</p>
+            </div>
+          </div>
+
+          <!-- Category 3 -->
+          <div class="f-cat-card">
+            <div class="f-cat-img-wrapper">
+              <img src="assets/furniture-3.jpg" alt="Premium Reception Counter Desks" class="f-cat-img" loading="lazy">
+            </div>
+            <div class="f-cat-info">
+              <h3 class="f-cat-title">Reception Furniture</h3>
+              <p class="f-cat-desc">Modular linear front reception counters and elegant custom fabric companion lounge sets welcoming your visitors.</p>
+            </div>
+          </div>
+
+          <!-- Category 4 -->
+          <div class="f-cat-card">
+            <div class="f-cat-img-wrapper">
+              <img src="assets/furniture-4.jpg" alt="Breakout Media Huddle High Tables" class="f-cat-img" loading="lazy">
+            </div>
+            <div class="f-cat-info">
+              <h3 class="f-cat-title">Huddle Furniture</h3>
+              <p class="f-cat-desc">Media-integrated collaboration high tables and acoustic breakout chairs designed for rapid ad-hoc team alignments.</p>
+            </div>
+          </div>
+
+          <!-- Category 5 (Full Width Row Divider highlight!) -->
+          <div class="f-cat-card full-width-cat">
+            <div class="f-cat-img-wrapper">
+              <img src="assets/furniture-5.jpg" alt="Fully Acoustic Quiet Focus Pod cocoons" class="f-cat-img" loading="lazy">
+            </div>
+            <div class="f-cat-info">
+              <h3 class="f-cat-title">Work Pods & Collaborative Seating</h3>
+              <p class="f-cat-desc">Fully-enclosed acoustic private call cocoons, ergonomic active task stools, and flexible high-back modular privacy sofas engineered to shield ambient office noise.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 8-IMAGE GALLERY GRID -->
+        <div class="gallery-heading-wrapper">
+          <h3 class="gallery-sub-heading">Furniture Showroom Gallery</h3>
+          <p class="gallery-sub-desc">Browse our collection of highly modern, ergonomic workspace seating and tables.</p>
+        </div>
+
+        <div class="gallery-grid-8" id="furniture-gallery-grid-scope">
+          
+          <div class="gallery-item" data-index="0" data-src="assets/furniture-1.jpg">
+            <img src="assets/furniture-1.jpg" alt="Modern Orange Fabric Collaborative Lounge Sofa" class="gallery-thumbnail" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="zoom-icon">➕</span>
+              <span class="gallery-item-title">Acoustic Lounge Seating</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-index="1" data-src="assets/furniture-2.jpg">
+            <img src="assets/furniture-2.jpg" alt="Collaborative Huddle Media Table Unit" class="gallery-thumbnail" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="zoom-icon">➕</span>
+              <span class="gallery-item-title">Huddle Station Desk</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-index="2" data-src="assets/furniture-3.jpg">
+            <img src="assets/furniture-3.jpg" alt="Ergonomic Workspace Lounge Tub Chairs" class="gallery-thumbnail" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="zoom-icon">➕</span>
+              <span class="gallery-item-title">Ergonomic Soft Seating</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-index="3" data-src="assets/furniture-4.jpg">
+            <img src="assets/furniture-4.jpg" alt="Corporate Breakout Café Stools & Tables" class="gallery-thumbnail" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="zoom-icon">➕</span>
+              <span class="gallery-item-title">Corporate Café Layout</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-index="4" data-src="assets/furniture-5.jpg">
+            <img src="assets/furniture-5.jpg" alt="High Back Privacy Sofa Units" class="gallery-thumbnail" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="zoom-icon">➕</span>
+              <span class="gallery-item-title">High-Back Workspace Sofa</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-index="5" data-src="assets/furniture-6.jpg">
+            <img src="assets/furniture-6.jpg" alt="Acoustic Modular Work Pod Booth" class="gallery-thumbnail" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="zoom-icon">➕</span>
+              <span class="gallery-item-title">Focus Quiet Pod</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-index="6" data-src="assets/furniture-7.jpg">
+            <img src="assets/furniture-7.jpg" alt="Designer Coffee Table configuration" class="gallery-thumbnail" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="zoom-icon">➕</span>
+              <span class="gallery-item-title">Minimalist Coffee Tables</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-index="7" data-src="assets/furniture-8.jpg">
+            <img src="assets/furniture-8.jpg" alt="Collaborative Mobile Training Seating" class="gallery-thumbnail" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="zoom-icon">➕</span>
+              <span class="gallery-item-title">Mobile Flex Nesting Chair</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- CTA SECTION BLOCK -->
+        <div class="furniture-cta-card">
+          <div class="f-cta-content">
+            <h4>Need furniture for your workspace?</h4>
+            <p>We supply, layout-plan, and custom fabric-finish modular collaborative furniture sets for high-end workspace interiors.</p>
+          </div>
+          <a href="contact.html" class="btn btn-secondary-accent">Contact Us</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- SHARED FOOTER -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-brand-side">
+        <img src="assets/logo.png" alt="Eco Space Products Logo" class="footer-logo-img">
+        <p class="footer-tagline-text">Architectural Glazed Partitions & Eco Collaborative Furniture solutions transforming dynamic workspaces.</p>
+      </div>
+
+      <div class="footer-nav-side">
+        <ul class="footer-quick-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="alloy.html">Partitions</a></li>
+          <li><a href="furniture.html">Furniture</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-copyright-bar">
+      <div class="copyright-container">
+        <p class="copyright-text">&copy; 2026 ECO SPACE PRODUCTS. All rights reserved.</p>
+        <p class="developed-by-text">Website developed and maintained by <span>ECO SPACE PRODUCTS</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- DYNAMIC LIGHTBOX MODAL OVERLAY -->
+  <div class="lightbox-overlay" id="lightbox-modal" role="dialog" aria-modal="true" aria-label="Acoustic glazed partitions large image viewer">
+    <div class="lightbox-loader" id="lightbox-loader"></div>
+    
+    <div class="lightbox-content-frame" id="lightbox-content-frame">
+      <img src="" alt="Acoustic glazed partitions large image view" class="lightbox-img" id="lightbox-main-img">
+      <div class="lightbox-caption-bar" id="lightbox-caption-bar">
+        <span class="lightbox-label" id="lightbox-image-title">Modular Partitioning</span>
+        <span class="lightbox-counter" id="lightbox-image-counter">1 / 8</span>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <button class="lightbox-btn close-btn" id="lightbox-close-btn" aria-label="Close Lightbox Modal">✕</button>
+    <button class="lightbox-btn arrow-btn left-arrow" id="lightbox-prev-btn" aria-label="Previous Gallery Image">‹</button>
+    <button class="lightbox-btn arrow-btn right-arrow" id="lightbox-next-btn" aria-label="Next Gallery Image">›</button>
+    
+    <div class="lightbox-play-control">
+      <button class="lightbox-play-btn" id="lightbox-play-btn" aria-label="Start image slideshow">▶ Play</button>
+    </div>
+  </div>
+
+  <!-- Core Script Injection -->
+  <script src="script.js"></script>
+</body>
+</html>

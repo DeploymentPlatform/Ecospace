@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eco Space Products | Premium Partitions & Furniture</title>
+  <meta name="description" content="Eco Space Products is a leading provider of architectural modular glass partition systems and collaborative workspace furniture. Transforming workspaces since 2016.">
+  
+  <!-- Google Fonts: Poppins (Headings) & Outfit (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- SHARED HEADER NAVIGATION -->
+  <header class="main-header" id="main-header">
+    <div class="header-container">
+      <a href="index.html" class="logo-container" aria-label="Eco Space Products Home">
+        <!-- Widescreen client logo image styled in CSS -->
+        <img src="assets/logo.png" alt="Eco Space Products Logo" class="brand-logo-img">
+      </a>
+
+      <!-- Desktop Links -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links-list">
+          <li><a href="index.html" class="nav-item-link">Home</a></li>
+          <li class="dropdown-container">
+            <a href="alloy.html" class="nav-item-link dropdown-trigger">Products <span class="arrow-icon">▼</span></a>
+            <ul class="dropdown-menu">
+              <li><a href="alloy.html" class="dropdown-link">Partitions</a></li>
+              <li><a href="furniture.html" class="dropdown-link">Furniture</a></li>
+            </ul>
+          </li>
+          <li><a href="projects.html" class="nav-item-link">Projects</a></li>
+          <li><a href="about.html" class="nav-item-link">About Us</a></li>
+          <li><a href="contact.html" class="nav-item-link contact-button">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile hamburger -->
+      <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu drawer -->
+    <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+        <li class="mobile-dropdown-container">
+          <button class="mobile-dropdown-trigger" id="mobile-dropdown-trigger">
+            Products <span class="mobile-arrow-icon">▼</span>
+          </button>
+          <ul class="mobile-dropdown-menu" id="mobile-dropdown-menu">
+            <li><a href="alloy.html" class="mobile-nav-link sub-link">Partitions</a></li>
+            <li><a href="furniture.html" class="mobile-nav-link sub-link">Furniture</a></li>
+          </ul>
+        </li>
+        <li><a href="projects.html" class="mobile-nav-link">Projects</a></li>
+        <li><a href="about.html" class="mobile-nav-link">About Us</a></li>
+        <li><a href="contact.html" class="mobile-nav-link mobile-contact-btn">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- HOME HERO SECTION (FULL SCREEN CAROUSEL) -->
+    <section class="hero-carousel-section" id="hero-carousel-container" aria-label="Home Carousel Banner">
+      <div class="carousel-container">
+        
+        <!-- Slide 1: Glass Partitions -->
+        <div class="carousel-slide active" data-index="0" style="background-image: url('assets/hero-partition.jpg');">
+          <div class="dark-overlay"></div>
+          <div class="slide-content-wrapper">
+            <h1 class="slide-title">Premium Glass Partition Systems</h1>
+            <p class="slide-subtitle">Modular glazed partitions for modern offices, experience centres, and commercial interiors.</p>
+            <div class="slide-cta-wrapper">
+              <a href="alloy.html" class="btn btn-primary-hero">Explore Partitions</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2: Collaborative Furniture -->
+        <div class="carousel-slide" data-index="1" style="background-image: url('assets/hero-furniture.jpg');">
+          <div class="dark-overlay"></div>
+          <div class="slide-content-wrapper">
+            <h1 class="slide-title">Collaborative Furniture</h1>
+            <p class="slide-subtitle">Lounge furniture, café furniture, reception furniture, and huddle-space solutions.</p>
+            <div class="slide-cta-wrapper">
+              <a href="furniture.html" class="btn btn-primary-hero">Explore Furniture</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Arrows -->
+        <button class="carousel-arrow prev-arrow" id="carousel-prev-btn" aria-label="Previous Slide">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="arrow-svg"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+        <button class="carousel-arrow next-arrow" id="carousel-next-btn" aria-label="Next Slide">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="arrow-svg"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+
+        <!-- Thumbnails (Bottom Right) -->
+        <div class="carousel-thumbnails-wrapper">
+          <button class="thumbnail-card active" data-slide-to="0">
+            <div class="thumb-progress-bar"><div class="progress-fill"></div></div>
+            <span class="thumb-num">01</span>
+            <div class="thumb-info">
+              <span class="thumb-tag">Modular Partitions</span>
+              <span class="thumb-title">Glazed Glass Systems</span>
+            </div>
+          </button>
+          <button class="thumbnail-card" data-slide-to="1">
+            <div class="thumb-progress-bar"><div class="progress-fill"></div></div>
+            <span class="thumb-num">02</span>
+            <div class="thumb-info">
+              <span class="thumb-tag">Collaborative</span>
+              <span class="thumb-title">Office Furniture</span>
+            </div>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PRODUCTS OVERVIEW PREVIEWS -->
+    <section class="products-overview-section">
+      <div class="section-container">
+        <div class="section-header-wrapper">
+          <span class="section-badge">Our Catalog</span>
+          <h2 class="section-title">Premium Products</h2>
+          <div class="accent-line"></div>
+          <p class="section-subtitle">Interior products designed to transform commercial and corporate spaces.</p>
+        </div>
+
+        <div class="products-grid">
+          <!-- Card 1: Partitions -->
+          <article class="product-card">
+            <div class="product-image-container">
+              <img src="assets/hero-partition.jpg" alt="Modular Glass Partitions Systems" class="product-card-img" loading="lazy">
+              <div class="card-overlay-hover"></div>
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-card-title">Partition Systems</h3>
+              <p class="product-card-desc">Slim-profile glass designs engineered for modern acoustics, fast installation, and sleek architectural layouts.</p>
+              <a href="alloy.html" class="product-card-btn">Explore Partitions <span class="arrow-right-icon">→</span></a>
+            </div>
+          </article>
+
+          <!-- Card 2: Furniture -->
+          <article class="product-card">
+            <div class="product-image-container">
+              <img src="assets/hero-furniture.jpg" alt="Collaborative Office Lounge Furniture" class="product-card-img" loading="lazy">
+              <div class="card-overlay-hover"></div>
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-card-title">Collaborative Furniture</h3>
+              <p class="product-card-desc">Flexible lounge seating, café furniture, receptions, and huddle stations supporting active corporate workflows.</p>
+              <a href="furniture.html" class="product-card-btn">Explore Furniture <span class="arrow-right-icon">→</span></a>
+            </div>
+          </article>
+
+          <!-- Card 3: Custom Solutions -->
+          <article class="product-card">
+            <div class="product-image-container">
+              <img src="assets/about-logo.png" alt="Custom Workspace Solutions" class="product-card-img" loading="lazy">
+              <div class="card-overlay-hover"></div>
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-card-title">Custom Solutions</h3>
+              <p class="product-card-desc">Tailored architectural drawings, material sourcing, and specialized product finishes custom-mapped to building dimensions.</p>
+              <a href="contact.html" class="product-card-btn">Discuss Custom Project <span class="arrow-right-icon">→</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- NARRATIVE COMPANY SUMMARY PREVIEW -->
+    <section class="about-section">
+      <div class="section-container">
+        <div class="two-column-layout">
+          
+          <!-- Left side graphic -->
+          <div class="about-graphic-col">
+            <div class="about-img-frame">
+              <img src="assets/about-logo.png" alt="Eco Space Corporate Team Brief" class="about-frame-img" loading="lazy">
+              <div class="floating-badge-years">
+                <span class="years-num">100%</span>
+                <span class="years-text">Eco Aligned</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right side textual details -->
+          <div class="about-copy-col">
+            <div class="branding-mini-header">
+              <span class="mini-brand-tag">Transforming Spaces</span>
+            </div>
+            <h2 class="about-main-heading">About Us</h2>
+            <h3 class="about-secondary-heading">ECO SPACE PRODUCTS</h3>
+            <div class="accent-line-left"></div>
+            <p class="about-p">
+              Eco Space Products is focused on transforming spaces through innovative, elegant, and functional interior products. We create customized solutions for workspaces, commercial interiors, experience centres, and collaborative environments. Our goal is to deliver products that enhance productivity, comfort, and visual appeal while maintaining quality, durability, and timely execution.
+            </p>
+            <p class="about-p">
+              We take pride in helping spaces come alive with products that inspire and perform. Through thoughtful design, reliable service, and strong project support, we aim to build lasting relationships with our clients and partners.
+            </p>
+            
+            <a href="about.html" class="btn btn-secondary-accent" style="margin-top: 16px;">Read Our Story</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT CTA CALLOUT SECTION -->
+    <section class="contact-section" style="background-color: var(--light); text-align: center;">
+      <div class="section-container">
+        <div class="furniture-cta-card" style="margin: 0 auto; max-width: 1000px;">
+          <div class="f-cta-content" style="text-align: left;">
+            <h4 style="color: var(--white); font-family: var(--font-headings); font-size: 26px; font-weight: 700; margin-bottom: 12px;">Transforming your Workspace?</h4>
+            <p style="color: rgba(255,255,255,0.7); font-size: 15px; font-weight: 300;">Get in touch with our commercial estimation team for project layouts, samples, or pricing quotes.</p>
+          </div>
+          <a href="contact.html" class="btn btn-secondary-accent">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SHARED FOOTER -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-brand-side">
+        <img src="assets/logo.png" alt="Eco Space Products Logo" class="footer-logo-img">
+        <p class="footer-tagline-text">Architectural Glazed Partitions & Eco Collaborative Furniture solutions transforming dynamic workspaces.</p>
+      </div>
+
+      <div class="footer-nav-side">
+        <ul class="footer-quick-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="alloy.html">Partitions</a></li>
+          <li><a href="furniture.html">Furniture</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-copyright-bar">
+      <div class="copyright-container">
+        <p class="copyright-text">&copy; 2026 ECO SPACE PRODUCTS. All rights reserved.</p>
+        <p class="developed-by-text">Website developed and maintained by <span>ECO SPACE PRODUCTS</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core Script Injection -->
+  <script src="script.js"></script>
+</body>
+</html>

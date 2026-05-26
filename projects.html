@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corporate Client Projects | Eco Space Products</title>
+  <meta name="description" content="Browse Eco Space Products' portfolio of transformed corporate interiors, experience centres, and commercial projects across India.">
+  
+  <!-- Google Fonts: Poppins (Headings) & Outfit (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="projects-body">
+
+  <!-- SHARED HEADER NAVIGATION -->
+  <header class="main-header" id="main-header">
+    <div class="header-container">
+      <a href="index.html" class="logo-container" aria-label="Eco Space Products Home">
+        <img src="assets/logo.png" alt="Eco Space Products Logo" class="brand-logo-img">
+      </a>
+
+      <!-- Desktop Links -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links-list">
+          <li><a href="index.html" class="nav-item-link">Home</a></li>
+          <li class="dropdown-container">
+            <a href="alloy.html" class="nav-item-link dropdown-trigger">Products <span class="arrow-icon">▼</span></a>
+            <ul class="dropdown-menu">
+              <li><a href="alloy.html" class="dropdown-link">Partitions</a></li>
+              <li><a href="furniture.html" class="dropdown-link">Furniture</a></li>
+            </ul>
+          </li>
+          <li><a href="projects.html" class="nav-item-link">Projects</a></li>
+          <li><a href="about.html" class="nav-item-link">About Us</a></li>
+          <li><a href="contact.html" class="nav-item-link contact-button">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile hamburger -->
+      <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Overlay Menu -->
+    <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+        <li class="mobile-dropdown-container">
+          <button class="mobile-dropdown-trigger" id="mobile-dropdown-trigger">
+            Products <span class="mobile-arrow-icon">▼</span>
+          </button>
+          <ul class="mobile-dropdown-menu" id="mobile-dropdown-menu">
+            <li><a href="alloy.html" class="mobile-nav-link sub-link">Partitions</a></li>
+            <li><a href="furniture.html" class="mobile-nav-link sub-link">Furniture</a></li>
+          </ul>
+        </li>
+        <li><a href="projects.html" class="mobile-nav-link">Projects</a></li>
+        <li><a href="about.html" class="mobile-nav-link">About Us</a></li>
+        <li><a href="contact.html" class="mobile-nav-link mobile-contact-btn">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- PROJECTS GRID CAROUSELS CONTAINER -->
+    <section class="projects-section" style="padding-top: 140px;">
+      <div class="section-container" style="padding-top: 0;">
+        
+        <div class="section-header-wrapper project-header-white">
+          <span class="section-badge">Case Studies</span>
+          <h1 class="section-title">Projects</h1>
+          <div class="accent-line"></div>
+          <p class="section-subtitle">Commercial workspaces and corporate buildings transformed with thoughtful interior products.</p>
+        </div>
+
+        <div class="projects-carousel-grid">
+          
+          <!-- BCG Card -->
+          <div class="project-slide-card" data-project="bcg">
+            <div class="project-slider-wrapper">
+              <div class="project-slider-track">
+                <img src="assets/project-bcg-1.jpg" alt="BCG Corporate Office Slide 1" class="proj-slide active" loading="lazy">
+                <img src="assets/project-bcg-2.jpg" alt="BCG Custom Glazing Details Slide 2" class="proj-slide" loading="lazy">
+                <img src="assets/alloyss5.jpg" alt="BCG Lounge Areas Slide 3" class="proj-slide" loading="lazy">
+              </div>
+              <div class="project-mini-indicators">
+                <span class="mini-dot active"></span>
+                <span class="mini-dot"></span>
+                <span class="mini-dot"></span>
+              </div>
+            </div>
+            <div class="project-card-caption">
+              <h3 class="project-card-name">BCG Office</h3>
+              <span class="project-card-tag">Experience Centre</span>
+            </div>
+          </div>
+
+          <!-- Bosch Card -->
+          <div class="project-slide-card" data-project="bosch">
+            <div class="project-slider-wrapper">
+              <div class="project-slider-track">
+                <img src="assets/project-bosch-1.jpg" alt="Bosch Tech Center Slide 1" class="proj-slide active" loading="lazy">
+                <img src="assets/project-bosch-2.jpg" alt="Bosch Glass Partition Slide 2" class="proj-slide" loading="lazy">
+                <img src="assets/alloyss3.jpg" alt="Bosch Seating Systems Slide 3" class="proj-slide" loading="lazy">
+              </div>
+              <div class="project-mini-indicators">
+                <span class="mini-dot active"></span>
+                <span class="mini-dot"></span>
+                <span class="mini-dot"></span>
+              </div>
+            </div>
+            <div class="project-card-caption">
+              <h3 class="project-card-name">Bosch Tech</h3>
+              <span class="project-card-tag">Modular Partitions</span>
+            </div>
+          </div>
+
+          <!-- Cargill Card -->
+          <div class="project-slide-card" data-project="cargill">
+            <div class="project-slider-wrapper">
+              <div class="project-slider-track">
+                <img src="assets/project-cargill-1.jpg" alt="Cargill Offices Slide 1" class="proj-slide active" loading="lazy">
+                <img src="assets/project-cargill-2.jpg" alt="Cargill Partition Mockup Slide 2" class="proj-slide" loading="lazy">
+                <img src="assets/alloyss4.jpg" alt="Cargill Quiet Zones Slide 3" class="proj-slide" loading="lazy">
+              </div>
+              <div class="project-mini-indicators">
+                <span class="mini-dot active"></span>
+                <span class="mini-dot"></span>
+                <span class="mini-dot"></span>
+              </div>
+            </div>
+            <div class="project-card-caption">
+              <h3 class="project-card-name">Cargill HQ</h3>
+              <span class="project-card-tag">Acoustic Breakouts</span>
+            </div>
+          </div>
+
+          <!-- Expedia Card -->
+          <div class="project-slide-card" data-project="expedia">
+            <div class="project-slider-wrapper">
+              <div class="project-slider-track">
+                <img src="assets/project-expedia-1.jpg" alt="Expedia Corporate Space Slide 1" class="proj-slide active" loading="lazy">
+                <img src="assets/project-expedia-2.jpg" alt="Expedia Glazing frames Slide 2" class="proj-slide" loading="lazy">
+                <img src="assets/furniture-1.jpg" alt="Expedia Lounge Loupes Slide 3" class="proj-slide" loading="lazy">
+              </div>
+              <div class="project-mini-indicators">
+                <span class="mini-dot active"></span>
+                <span class="mini-dot"></span>
+                <span class="mini-dot"></span>
+              </div>
+            </div>
+            <div class="project-card-caption">
+              <h3 class="project-card-name">Expedia Travel</h3>
+              <span class="project-card-tag">Commercial Interiors</span>
+            </div>
+          </div>
+
+          <!-- HP Vogue Wall Card -->
+          <div class="project-slide-card" data-project="hpvogue">
+            <div class="project-slider-wrapper">
+              <div class="project-slider-track">
+                <img src="assets/project-hpvogue-1.jpg" alt="HP Vogue Wall Slide 1" class="proj-slide active" loading="lazy">
+                <img src="assets/project-hpvogue-2.jpg" alt="HP Vogue Double Glazed Panels Slide 2" class="proj-slide" loading="lazy">
+                <img src="assets/furniture-3.jpg" alt="HP Vogue Soft sofa Slide 3" class="proj-slide" loading="lazy">
+              </div>
+              <div class="project-mini-indicators">
+                <span class="mini-dot active"></span>
+                <span class="mini-dot"></span>
+                <span class="mini-dot"></span>
+              </div>
+            </div>
+            <div class="project-card-caption">
+              <h3 class="project-card-name">HP Vogue Wall</h3>
+              <span class="project-card-tag">Double Glazed Walls</span>
+            </div>
+          </div>
+
+          <!-- HP Card -->
+          <div class="project-slide-card" data-project="hp">
+            <div class="project-slider-wrapper">
+              <div class="project-slider-track">
+                <img src="assets/project-hp-1.jpg" alt="HP Corporate Centre Slide 1" class="proj-slide active" loading="lazy">
+                <img src="assets/project-hp-2.jpg" alt="HP Glass partition tracking Slide 2" class="proj-slide" loading="lazy">
+                <img src="assets/furniture-4.jpg" alt="HP Huddle seating Slide 3" class="proj-slide" loading="lazy">
+              </div>
+              <div class="project-mini-indicators">
+                <span class="mini-dot active"></span>
+                <span class="mini-dot"></span>
+                <span class="mini-dot"></span>
+              </div>
+            </div>
+            <div class="project-card-caption">
+              <h3 class="project-card-name">HP Offices</h3>
+              <span class="project-card-tag">Modular Skirting</span>
+            </div>
+          </div>
+
+          <!-- Informatica Card -->
+          <div class="project-slide-card" data-project="informatica">
+            <div class="project-slider-wrapper">
+              <div class="project-slider-track">
+                <img src="assets/project-informatica-1.jpg" alt="Informatica Offices Slide 1" class="proj-slide active" loading="lazy">
+                <img src="assets/project-informatica-2.jpg" alt="Informatica Glazing profile Slide 2" class="proj-slide" loading="lazy">
+                <img src="assets/furniture-5.jpg" alt="Informatica work pod Slide 3" class="proj-slide" loading="lazy">
+              </div>
+              <div class="project-mini-indicators">
+                <span class="mini-dot active"></span>
+                <span class="mini-dot"></span>
+                <span class="mini-dot"></span>
+              </div>
+            </div>
+            <div class="project-card-caption">
+              <h3 class="project-card-name">Informatica</h3>
+              <span class="project-card-tag">Collaborative Spaces</span>
+            </div>
+          </div>
+
+          <!-- SAP Card -->
+          <div class="project-slide-card" data-project="sap">
+            <div class="project-slider-wrapper">
+              <div class="project-slider-track">
+                <img src="assets/project-sap-1.jpg" alt="SAP Executive Offices Slide 1" class="proj-slide active" loading="lazy">
+                <img src="assets/project-sap-2.jpg" alt="SAP Glass divisions Slide 2" class="proj-slide" loading="lazy">
+                <img src="assets/furniture-7.jpg" alt="SAP Training rooms Slide 3" class="proj-slide" loading="lazy">
+              </div>
+              <div class="project-mini-indicators">
+                <span class="mini-dot active"></span>
+                <span class="mini-dot"></span>
+                <span class="mini-dot"></span>
+              </div>
+            </div>
+            <div class="project-card-caption">
+              <h3 class="project-card-name">SAP Labs</h3>
+              <span class="project-card-tag">Corporate Classrooms</span>
+            </div>
+          </div>
+
+          <!-- Sequoia Capital Card -->
+          <div class="project-slide-card" data-project="sequoia">
+            <div class="project-slider-wrapper">
+              <div class="project-slider-track">
+                <img src="assets/project-sequoia-1.jpg" alt="Sequoia Capital Offices Slide 1" class="proj-slide active" loading="lazy">
+                <img src="assets/project-sequoia-2.jpg" alt="Sequoia Boardroom glazing Slide 2" class="proj-slide" loading="lazy">
+                <img src="assets/alloyss2.jpg" alt="Sequoia reception seating Slide 3" class="proj-slide" loading="lazy">
+              </div>
+              <div class="project-mini-indicators">
+                <span class="mini-dot active"></span>
+                <span class="mini-dot"></span>
+                <span class="mini-dot"></span>
+              </div>
+            </div>
+            <div class="project-card-caption">
+              <h3 class="project-card-name">Sequoia Cap</h3>
+              <span class="project-card-tag">Boardroom Partitioning</span>
+            </div>
+          </div>
+
+          <!-- Thomson Reuters Card -->
+          <div class="project-slide-card" data-project="thomson">
+            <div class="project-slider-wrapper">
+              <div class="project-slider-track">
+                <img src="assets/project-thomson-1.jpg" alt="Thomson Reuters Offices Slide 1" class="proj-slide active" loading="lazy">
+                <img src="assets/project-thomson-2.jpg" alt="Thomson partitions Slide 2" class="proj-slide" loading="lazy">
+                <img src="assets/furniture-2.jpg" alt="Thomson lounge desks Slide 3" class="proj-slide" loading="lazy">
+              </div>
+              <div class="project-mini-indicators">
+                <span class="mini-dot active"></span>
+                <span class="mini-dot"></span>
+                <span class="mini-dot"></span>
+              </div>
+            </div>
+            <div class="project-card-caption">
+              <h3 class="project-card-name">Thomson Reuters</h3>
+              <span class="project-card-tag">Glass Media Rooms</span>
+            </div>
+          </div>
+
+          <!-- Verizon Chennai Card -->
+          <div class="project-slide-card" data-project="verizon">
+            <div class="project-slider-wrapper">
+              <div class="project-slider-track">
+                <img src="assets/project-verizon-1.jpg" alt="Verizon Chennai Office Slide 1" class="proj-slide active" loading="lazy">
+                <img src="assets/project-verizon-2.jpg" alt="Verizon glazed panels Slide 2" class="proj-slide" loading="lazy">
+                <img src="assets/alloyss1.jpg" alt="Verizon huddle space Slide 3" class="proj-slide" loading="lazy">
+              </div>
+              <div class="project-mini-indicators">
+                <span class="mini-dot active"></span>
+                <span class="mini-dot"></span>
+                <span class="mini-dot"></span>
+              </div>
+            </div>
+            <div class="project-card-caption">
+              <h3 class="project-card-name">Verizon Office</h3>
+              <span class="project-card-tag">Acoustic Breakouts</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SHARED FOOTER -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-brand-side">
+        <img src="assets/logo.png" alt="Eco Space Products Logo" class="footer-logo-img">
+        <p class="footer-tagline-text">Architectural Glazed Partitions & Eco Collaborative Furniture solutions transforming dynamic workspaces.</p>
+      </div>
+
+      <div class="footer-nav-side">
+        <ul class="footer-quick-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="alloy.html">Partitions</a></li>
+          <li><a href="furniture.html">Furniture</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-copyright-bar">
+      <div class="copyright-container">
+        <p class="copyright-text">&copy; 2026 ECO SPACE PRODUCTS. All rights reserved.</p>
+        <p class="developed-by-text">Website developed and maintained by <span>ECO SPACE PRODUCTS</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core Script Injection -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get in Touch with Us | Eco Space Products</title>
+  <meta name="description" content="Contact Eco Space Products. Reach our estimation team for glass partitions, collaborative lounge furniture quotes, showroom hours, and business directions.">
+  
+  <!-- Google Fonts: Poppins (Headings) & Outfit (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- SHARED HEADER NAVIGATION -->
+  <header class="main-header" id="main-header">
+    <div class="header-container">
+      <a href="index.html" class="logo-container" aria-label="Eco Space Products Home">
+        <img src="assets/logo.png" alt="Eco Space Products Logo" class="brand-logo-img">
+      </a>
+
+      <!-- Desktop Links -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links-list">
+          <li><a href="index.html" class="nav-item-link">Home</a></li>
+          <li class="dropdown-container">
+            <a href="alloy.html" class="nav-item-link dropdown-trigger">Products <span class="arrow-icon">▼</span></a>
+            <ul class="dropdown-menu">
+              <li><a href="alloy.html" class="dropdown-link">Partitions</a></li>
+              <li><a href="furniture.html" class="dropdown-link">Furniture</a></li>
+            </ul>
+          </li>
+          <li><a href="projects.html" class="nav-item-link">Projects</a></li>
+          <li><a href="about.html" class="nav-item-link">About Us</a></li>
+          <li><a href="contact.html" class="nav-item-link contact-button">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile hamburger -->
+      <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Overlay Menu -->
+    <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+        <li class="mobile-dropdown-container">
+          <button class="mobile-dropdown-trigger" id="mobile-dropdown-trigger">
+            Products <span class="mobile-arrow-icon">▼</span>
+          </button>
+          <ul class="mobile-dropdown-menu" id="mobile-dropdown-menu">
+            <li><a href="alloy.html" class="mobile-nav-link sub-link">Partitions</a></li>
+            <li><a href="furniture.html" class="mobile-nav-link sub-link">Furniture</a></li>
+          </ul>
+        </li>
+        <li><a href="projects.html" class="mobile-nav-link">Projects</a></li>
+        <li><a href="about.html" class="mobile-nav-link">About Us</a></li>
+        <li><a href="contact.html" class="mobile-nav-link mobile-contact-btn">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="subpage-spacer-top">
+    <!-- GET IN TOUCH CARD LAYOUT -->
+    <section class="contact-section" style="background-color: transparent;">
+      <div class="section-container" style="padding-top: 60px;">
+        
+        <div class="section-header-wrapper">
+          <span class="section-badge">Get in Touch</span>
+          <h1 class="section-title" style="font-size: 42px;">Get in touch with us!</h1>
+          <div class="accent-line"></div>
+          <p class="section-subtitle">Reach out for partition layout plans, collaborative soft seating quotes, or custom corporate projects.</p>
+        </div>
+
+        <div class="two-column-layout contact-form-grid">
+          
+          <!-- Left side contact form card -->
+          <div class="contact-form-card">
+            <h3 class="card-inner-title">Send a Message</h3>
+            <p class="card-inner-subtitle">Fill in the fields below. Our estimation team will reply in 1 business day.</p>
+            
+            <!-- Success Modal Overlay inside card bounds -->
+            <div class="contact-success-box" id="contact-success-box">
+              <div class="success-icon-ring">✓</div>
+              <h4>Thank you!</h4>
+              <p>We will contact you shortly.</p>
+              <button class="btn btn-close-success" id="btn-close-success">Send Another Inquiry</button>
+            </div>
+
+            <!-- HTML5 Interactive Form -->
+            <form class="interactive-form" id="ecospace-contact-form" action="#" method="POST">
+              <!-- WEB3FORMS ACCESS KEY PLACEHOLDER (Uncomment and replace default value with key for active mailings)
+              <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY_HERE">
+              -->
+              
+              <div class="form-row-2">
+                <div class="input-group">
+                  <input type="text" id="contact-name" name="name" class="floating-input" placeholder=" " required>
+                  <label for="contact-name" class="floating-label">Full Name *</label>
+                  <span class="error-msg-label" id="err-name">Name is required</span>
+                </div>
+                <div class="input-group">
+                  <input type="tel" id="contact-phone" name="phone" class="floating-input" placeholder=" ">
+                  <label for="contact-phone" class="floating-label">Phone Number (Optional)</label>
+                </div>
+              </div>
+
+              <div class="input-group">
+                <input type="email" id="contact-email" name="email" class="floating-input" placeholder=" " required>
+                <label for="contact-email" class="floating-label">Email Address *</label>
+                <span class="error-msg-label" id="err-email">Please enter a valid email address</span>
+              </div>
+
+              <div class="input-group text-area-group">
+                <textarea id="contact-message" name="message" class="floating-input text-area-input" placeholder=" " required></textarea>
+                <label for="contact-message" class="floating-label">Your Workspace Requirement *</label>
+                <span class="error-msg-label" id="err-message">Requirement details are required</span>
+              </div>
+
+              <button type="submit" class="btn btn-submit-form" id="btn-submit-form">
+                <span>Submit Inquiry</span>
+                <span class="btn-spinner"></span>
+              </button>
+            </form>
+          </div>
+
+          <!-- Right side details card -->
+          <div class="contact-details-card">
+            <div class="details-top-info">
+              <h3 class="card-inner-title">Eco Space Headquarters</h3>
+              <p class="card-inner-subtitle">Visit our corporate showroom to visualize our partition framing profiles and collaborative mock-ups.</p>
+              
+              <div class="contact-line-details">
+                
+                <div class="detail-item">
+                  <span class="detail-icon">🏢</span>
+                  <address class="detail-address-block">
+                    <strong>ECO SPACE PRODUCTS</strong><br>
+                    Level 4, Corporate Park Square, Outer Ring Road,<br>
+                    Bangalore, Karnataka - 560103, India
+                  </address>
+                </div>
+
+                <div class="detail-item">
+                  <span class="detail-icon">✉</span>
+                  <div>
+                    <strong>Commercial Estimations:</strong><br>
+                    <a href="mailto:commercials@ecospaceproducts.com" class="detail-link">commercials@ecospaceproducts.com</a><br>
+                    <a href="mailto:info@ecospaceproducts.com" class="detail-link">info@ecospaceproducts.com</a>
+                  </div>
+                </div>
+
+                <div class="detail-item">
+                  <span class="detail-icon">📞</span>
+                  <div>
+                    <strong>Phone Support:</strong><br>
+                    <a href="tel:+918049581902" class="detail-link">+91 80 4958 1902</a> / 
+                    <a href="tel:+919845012345" class="detail-link">+91 98450 12345</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Operational Hours -->
+            <div class="hours-table-wrapper">
+              <h4 class="hours-heading">Showroom & Estimation Hours</h4>
+              <table class="hours-table">
+                <tbody>
+                  <tr>
+                    <td class="day-col">Monday - Friday</td>
+                    <td class="time-col">9:00 AM - 5:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td class="day-col">Saturday</td>
+                    <td class="time-col">10:00 AM - 4:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td class="day-col day-closed">Sunday</td>
+                    <td class="time-col time-closed">Closed</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Pulsing Location Map linked to external Google Maps url -->
+            <a href="https://maps.google.com/?q=Outer+Ring+Road+Bangalore" target="_blank" rel="noopener noreferrer" class="contact-map-frame" aria-label="Open Eco Space corporate office on Google Maps">
+              <img src="assets/contact-map.jpg" alt="Eco Space Office Location Map Bangalore" class="map-img-bg" loading="lazy">
+              <div class="map-marker-glow">
+                <div class="pulse-ring"></div>
+                <div class="marker-dot"></div>
+              </div>
+              <div class="map-overlay-card">
+                <h5>ORR Business District</h5>
+                <p>Bangalore, IN</p>
+              </div>
+            </a>
+
+            <!-- Social Links wrapper -->
+            <div class="social-links-wrapper">
+              <span class="social-label">Follow Us:</span>
+              <a href="https://linkedin.com/company/ecospaceproducts" target="_blank" rel="noopener noreferrer" class="social-anchor-linkedin" aria-label="Visit Eco Space Products on LinkedIn">
+                <img src="assets/linkedin.png" alt="LinkedIn Logo" class="linkedin-logo-icon">
+                <span>LinkedIn</span>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- SHARED FOOTER -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-brand-side">
+        <img src="assets/logo.png" alt="Eco Space Products Logo" class="footer-logo-img">
+        <p class="footer-tagline-text">Architectural Glazed Partitions & Eco Collaborative Furniture solutions transforming dynamic workspaces.</p>
+      </div>
+
+      <div class="footer-nav-side">
+        <ul class="footer-quick-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="alloy.html">Partitions</a></li>
+          <li><a href="furniture.html">Furniture</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-copyright-bar">
+      <div class="copyright-container">
+        <p class="copyright-text">&copy; 2026 ECO SPACE PRODUCTS. All rights reserved.</p>
+        <p class="developed-by-text">Website developed and maintained by <span>ECO SPACE PRODUCTS</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core Script Injection -->
+  <script src="script.js"></script>
+</body>
+</html>

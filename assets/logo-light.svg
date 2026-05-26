@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 120" width="500" height="120">
+  <defs>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0078B6" />
+      <stop offset="100%" stop-color="#005C8A" />
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8CC63F" />
+      <stop offset="100%" stop-color="#7BAE22" />
+    </linearGradient>
+  </defs>
+  <g transform="translate(10, 10)">
+    <path d="M 15,30 L 55,10 L 95,30 L 95,70 L 55,90 L 15,70 Z" fill="none" stroke="url(#blueGrad)" stroke-width="6" stroke-linejoin="round" />
+    <path d="M 55,25 L 80,38 L 80,62 L 55,75 L 30,62 Z" fill="url(#greenGrad)" opacity="0.85" />
+    <path d="M 55,10 L 55,90 M 15,70 L 95,30 M 15,30 L 95,70" stroke="#ffffff" stroke-width="2" opacity="0.3" />
+  </g>
+  <text x="130" y="58" font-family="'Poppins', sans-serif" font-size="34" font-weight="800" fill="#242424" letter-spacing="1.5">ECO SPACE</text>
+  <text x="130" y="88" font-family="'Outfit', sans-serif" font-size="16" font-weight="600" fill="#0078B6" letter-spacing="4.5">PRODUCTS</text>
+  <text x="130" y="105" font-family="'Outfit', sans-serif" font-size="10" font-weight="400" fill="#8A8A8A" letter-spacing="2">TRANSFORMING SPACES</text>
+</svg>
